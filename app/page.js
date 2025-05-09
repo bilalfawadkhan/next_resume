@@ -2,102 +2,70 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+<nav>
+        <ul class="flex justify-center w-1/3 gap-10 p-4 mx-auto mt-4 text-white bg-gray-800 rounded-lg bg-opacity-35">
+            <li><a href="#" class="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">Work</a></li>
+            <li><a href="#" class="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">About</a></li>
+            <li><a href="#" class="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">Notes</a></li>
+            <li><a href="#" class="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">Contact</a></li>
+        </ul>
+    </nav>
+  <div class="h-full mt-28">
+    <h1 class="text-center borel-regular text-[clamp(3.5rem,10vw,7rem)] " >Hi, I'm BiláL. </h1>
+    <h2 class="pt-1 text-center borel-regular text-[clamp(3.5rem,10vw,7rem)]">A Full-Stack Dev.</h2>
+    <h2 class="pt-10 text-center borel-regular lg:text-2xl">I'm passionate about developing ideas into reality</h2>  
+  </div>  
+    <div class="grid grid-cols-1 p-8 gap-x-14 gap-y-52 lg:grid-cols-12 mt-28">
+        <div  href="" class="group col-span-12 lg:col-span-4 lg:col-start-1 overflow-hidden bg-customPink h-72 lg:h-[32rem] rounded-[3rem] transition duration-500 ease-in-out hover:shadow-xl hover:bg-customPinkDark hover:shadow-amber-600 hover:-translate-y-1">
+            <div class="flex flex-col items-end h-full ">
+                <h4 class="pt-4 pr-6 text-lg">Little Description</h4>
+                <h2 class="pb-4 pr-6 text-3xl">Project Name</h2>
+                <img src="https://picsum.photos/id/870/200?grayscale&blur=2" class="w-11/12 transition duration-500 ease-in-out grow rounded-r-xl rounded-t-xl group-hover:translate-y-3 z-1"/>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div class="group col-span-12 lg:col-span-8 overflow-hidden bg-customYellow h-72 lg:h-[32rem] rounded-[3rem] transition duration-500 ease-in-out hover:shadow-xl hover:bg-customYellowDark hover:shadow-amber-600 hover:-translate-y-1">
+            <div class="flex flex-col items-end h-full ">
+                <h4 class="pt-4 pr-6 text-lg">Little Description</h4>
+                <h2 class="pb-4 pr-6 text-3xl">Project Name</h2>
+                <img src="https://picsum.photos/id/870/200?grayscale&blur=2" class="w-11/12 transition duration-500 ease-in-out grow rounded-r-xl rounded-t-xl group-hover:translate-y-3 z-1"/>
+            </div>
+        </div>
+        <div class="group col-span-12 lg:col-span-7 overflow-hidden bg-customTeal h-72 lg:h-[32rem] rounded-[3rem] transition duration-500 ease-in-out hover:shadow-xl hover:bg-customTealDark hover:shadow-amber-600 hover:-translate-y-1">
+            <div class="flex flex-col items-end h-full ">
+                <h4 class="pt-4 pr-6 text-lg">Little Description</h4>
+                <h2 class="pb-4 pr-6 text-3xl">Project Name</h2>
+                <img src="https://picsum.photos/id/870/200?grayscale&blur=2" class="w-11/12 transition duration-500 ease-in-out grow rounded-r-xl rounded-t-xl group-hover:translate-y-3 z-1"/>
+            </div>
+        </div>
+        <div class="group col-span-12 lg:col-span-5 overflow-hidden bg-customPurple h-72 lg:h-[32rem] rounded-[3rem] transition duration-500 ease-in-out hover:shadow-xl hover:bg-customPurpleDark hover:shadow-amber-600 hover:-translate-y-1">
+            <div class="flex flex-col items-end h-full ">
+                <h4 class="pt-4 pr-6 text-lg">Little Description</h4>
+                <h2 class="pb-4 pr-6 text-3xl">Project Name</h2>
+                <img src="https://picsum.photos/id/870/200?grayscale&blur=2" class="w-11/12 transition duration-500 ease-in-out grow rounded-r-xl rounded-t-xl group-hover:translate-y-3 z-1"/>
+            </div>
+        </div>
     </div>
+    <div>
+        <h1 class="text-center borel-regular text-[clamp(3.5rem,10vw,7rem)] m-24"> In Progress</h1>
+        <div class="grid grid-cols-1 p-8 gap-x-14 gap-y-52 lg:grid-cols-12 mt-28">
+            <div  href="" class="group col-span-12 lg:col-span-6 lg:col-start-1 overflow-hidden bg-customPink h-72 lg:h-[32rem] rounded-[3rem] transition duration-500 ease-in-out hover:shadow-xl hover:bg-customPinkDark hover:shadow-amber-600 hover:-translate-y-1">
+                <div class="flex flex-col items-end h-full ">
+                    <h4 class="pt-4 pr-6 text-lg">Little Description</h4>
+                    <h2 class="pb-4 pr-6 text-3xl">Project Name</h2>
+                    <img src="https://picsum.photos/id/870/200?grayscale&blur=2" class="w-11/12 transition duration-500 ease-in-out grow rounded-r-xl rounded-t-xl group-hover:translate-y-3 z-1"/>
+                </div>
+            </div>
+            <div class="group col-span-12 lg:col-span-6 overflow-hidden bg-customYellow h-72 lg:h-[32rem] rounded-[3rem] transition duration-500 ease-in-out hover:shadow-xl hover:bg-customYellowDark hover:shadow-amber-600 hover:-translate-y-1">
+                <div class="flex flex-col items-end h-full ">
+                    <h4 class="pt-4 pr-6 text-lg">Little Description</h4>
+                    <h2 class="pb-4 pr-6 text-3xl">Project Name</h2>
+                    <img src="https://picsum.photos/id/870/200?grayscale&blur=2" class="w-11/12 transition duration-500 ease-in-out grow rounded-r-xl rounded-t-xl group-hover:translate-y-3 z-1"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
   );
 }
