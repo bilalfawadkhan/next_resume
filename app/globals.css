@@ -21,6 +21,7 @@
   --color-customTealDark: #58b2b2;
   --color-customPurple: #8E7DBE;
   --color-customPurpleDark: #8471b8;
+  --color-pagecolour : #579981;
 }
 
 @media (prefers-color-scheme: dark) {
