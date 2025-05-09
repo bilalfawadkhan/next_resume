@@ -12,6 +12,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme{
+  --color-customPink: #F7CFD8;
+  --color-customPinkDark:#f1aaba;
+  --color-customYellow: #9EC6F3;
+  --color-customYellowDark: #579cea;
+  --color-customTeal: #87c8c8;
+  --color-customTealDark: #58b2b2;
+  --color-customPurple: #8E7DBE;
+  --color-customPurpleDark: #8471b8;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
