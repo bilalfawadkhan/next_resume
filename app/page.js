@@ -3,14 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-<nav>
-        <ul className="flex justify-center w-1/3 gap-10 p-4 mx-auto mt-4 text-white bg-gray-800 rounded-lg bg-opacity-35">
-            <li><a href="#" className="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">Work</a></li>
-            <li><a href="#" className="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">About</a></li>
-            <li><a href="#" className="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">Notes</a></li>
-            <li><a href="#" className="p-2 text-blue-500 rounded-lg hover:bg-white hover:opacity-65">Contact</a></li>
-        </ul>
-    </nav>
   <div className="h-full mt-28">
     <h1 className="text-center borel-regular text-[clamp(3.5rem,10vw,7rem)] " >Hi, I'm BiláL. </h1>
     <h2 className="pt-1 text-center borel-regular text-[clamp(3.5rem,10vw,7rem)]">A Full-Stack Dev.</h2>
